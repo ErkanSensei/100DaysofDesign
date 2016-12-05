@@ -1,77 +1,76 @@
 body {
-  position: fixed;
-  height:100% ;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  background: #E5E5E5;
-  transform: translate(-50%, -50%);
+    /* bring your own prefixes */
+    background: #E5E5E5;
+    text-align: center
 }
 
 @font-face {
     font-family: BebasNeue;
     src: url(BebasNeue_Bold.ttf);
 }
-p { 
+
+p {
     font-family: BebasNeue;
     font-size: 40px;
     color: #242424;
 }
+
 input {
-	border-radius: 5px;
-	margin-bottom: 50px;
-  height: 7%;
-  width: 100%;
-  border-color: rgba(50, 50, 50, 0.2);
-  background-color: transparent;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-  font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 7%;
+    width: 100%;
+    border-color: rgba(50, 50, 50, 0.2);
+    background-color: transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 15px;
 }
 
 input[type=button] {
-  background-color:#FFBF00;
-  font-family: BebasNeue;
-  font-size: 25px;
-  width: 50%;
-  height: 10%;
-  margin-left: 25%;
+    background-color: #FFBF00;
+    font-family: BebasNeue;
+    font-size: 25px;
+    width: 50%;
+    height: 10%;
 }
-input[type=text]:focus,[type=password]:focus {
-    border: 2px solid rgba(50,50,50,1);
+
+input[type=text]:focus,
+[type=password]:focus {
+    border: 2px solid rgba(50, 50, 50, 1);
 }
+
+.form {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+}
+
 fieldset {
-  padding: 1em;
-  height: 500px;
-  width: 400px;
-  border: 0px;
-  font:80%/1 sans-serif;
-  }
+    text-align: center;
+}
+
 label {
-  float:left;
-  width:25%;
-  margin-right:0.5em;
-  padding-top:0.2em;
-  text-align:right;
-  font-weight:bold;
-  }
+    float: left;
+    width: 25%;
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: right;
+    font-weight: bold;
+}
 
 [placeholder]:focus::-webkit-input-placeholder {
-  transition: text-indent 0.2s 0.2s ease; 
-  text-indent: -100%;
-  opacity: 0.5;
+    transition: text-indent 0.2s 0.2s ease;
+    text-indent: -100%;
+    opacity: 0.5;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #323232;
-  opacity: .5;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #323232;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #323232;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #323232;
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #323232;
+    opacity: .5;
 }
